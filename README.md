@@ -41,7 +41,7 @@ $this->slug->remove('post', 15);
  */
 ```
 
-## goto($group, $slug, $router, $router_param='slug')
+## goto($group, $slug, $router, $router_param='slug', $router_params=[])
 
 ```php
 /**
@@ -50,6 +50,7 @@ $this->slug->remove('post', 15);
  * @param string $slug Slug lama yang diketahui
  * @param string $router Nama router kemana user akan diredirect
  * @param string $router_param Nama paramater slug di router.
+ * @param array $router_params Additional parameters to send to url generator.
  * @return boolean false jika tidak menemukan data
  */
 ```
